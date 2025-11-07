@@ -4,12 +4,12 @@ spring:
 server:
   servlet:
     context-path: /api
-  port: ${SERVER_PORT:8888}
+  port: 8888
 
 
 # Configuration de l'API de base
 base-api:
-  url: http://${BASE_SNPC_HOST:localhost}:9999
+  url: http://localhost:9999
   timeout:
     connect: 5000
     read: 30000
