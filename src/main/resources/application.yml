@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SNPC-ERP
+server:
+  servlet:
+    context-path: /api
+  port: ${SERVER_PORT:8888}
+
+
+# Configuration de l'API de base
+base-api:
+  url: http://${BsnpcASE_UR }:9999
+  timeout:
+    connect: 5000
+    read: 30000
