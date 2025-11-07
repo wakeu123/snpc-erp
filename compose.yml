@@ -1,0 +1,13 @@
+services:
+  snpc:
+    image: wakeu/snpc-erp:0.0.1
+    container_name: snpc-erp
+    restart: always
+    environment:
+      - BASE_SNPC_HOST=snpc
+    networks:
+      - snpc-network
+networks:
+  snpc-network:
+    external: true
+    name: snpc-network

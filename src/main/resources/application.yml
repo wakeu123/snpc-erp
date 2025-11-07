@@ -9,7 +9,7 @@ server:
 
 # Configuration de l'API de base
 base-api:
-  url: http://${BsnpcASE_UR }:9999
+  url: http://${BASE_SNPC_HOST:localhost}:9999
   timeout:
     connect: 5000
     read: 30000
